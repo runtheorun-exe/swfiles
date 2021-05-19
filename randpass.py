@@ -18,5 +18,3 @@ for i in range(100):
             with open('randpass.csv', mode='a') as file_:
                 file_.write(password)
                 file_.write("\n")
-        if (i % 10) == 0:
-            time.sleep(1)
