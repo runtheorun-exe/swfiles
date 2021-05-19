@@ -5,7 +5,7 @@ import time
 
 symbols = ['*', '%', '£']  # Can add more
 passlist = [ ]
-for i in range(10):
+for i in range(100):
     password = ""
     for lngth in range(15):
         password += random.choice(string.ascii_lowercase)
@@ -18,3 +18,5 @@ for i in range(10):
             with open('randpass.csv', mode='a') as file_:
                 file_.write(password)
                 file_.write("\n")
+        if (i % 10) == 0:
+            time.sleep(1)
